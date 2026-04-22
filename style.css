@@ -67,9 +67,12 @@ ul {
 .hero-section {
     height: 340px;
     text-align: center;
-    margin-block: 100px;
+    padding-block: 100px;
    
 }
+
+.top-gradient {
+  background: linear-gradient(to bottom, rgb(238,246,255), white) fixed;}
 
 .stats-section {
     display: flex;
@@ -98,11 +101,19 @@ ul {
     margin-right: 10px;
 }
 
+.btn-primary:hover {
+    background-color: #2c226f;
+}
+
 .btn-secondary {
     background-color: #fff;
     color: black;
     border: 1px solid rgb(230,232,235);
     margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #c3c1c1;
 }
 
 .icon {
@@ -169,11 +180,13 @@ ul {
     border-radius: 10%;
 }
 
+
+
 .works-section {
     background-color: rgb(249,250,251);
     text-align: center;
     padding-block: 30px;
-    margin-block: 30px;
+    margin-top: 40px;
 }
 
 .works-container {
@@ -241,6 +254,42 @@ ul {
     width: 100px;
     height: 30px;
 }
+
+.btn-now:hover {
+    background-color: #2c226f;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(16,24,40);
+    color: white;
+
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-item a:nth-child(1),
+.footer-logo span {
+    font-weight: 900;
+}
+
+.about-item a:not(:nth-child(1)) {
+    cursor: pointer;
+}
+
 
 
 

@@ -33,13 +33,14 @@
             </button>
         </nav>
     </header>
+    <div class="top-gradient">
     <div class="hero-section">
         <h1 class="hero-title">Создавайте полезные привычки <br>Меняйте жизнь к лучшему</h1>
         <p class="hero-description">
             Трекер привычек поможет вам развить новые навыки, достичь целей и отслеживать <br>свой прогресс каждый день
         </p>
         <div class="button-container">
-            <button class="btn btn-primary">Начать сейчас</button>
+            <button class="btn btn-primary" onclick="window.location.href='addHabbit.html'">Начать сейчас</button>
             <button class="btn btn-secondary">Узнать больше</button>
         </div>
         <div class="stats-section">
@@ -121,6 +122,7 @@
             </div>
         </div>
     </div>
+    </div>
     <div class="works-section">
         <h1>Как это работает</h1>
         <p class="works-description">Три простых шага к успешным привычкам</p>
@@ -159,7 +161,42 @@
         <p class="start-description">Присоединяйтесь к тысячам людей, которве меняют свою жизнь к лучшему</p>
         <button class="btn btn-now">Начать сейчас</button>
     </div>
-
-
+    <footer class="footer">
+        <div class="about-container">
+            <div class="about-item about-tracker">
+                <div class="footer-logo">
+                    <a href="/" class="header-logo img">
+                        <img src="./images/logo.png" alt="HabbitTracker Logo" 
+                        class="header-logo-image" width="40px"
+                        loading="lazy">
+                    </a>
+                    <span class="footer-title">HabbitTracker</span>
+                </div>
+                <p class="about-tracker-description">
+                    Трекер привычек для достижения<br>
+                    ваших целей и<br>
+                    самосовершенствования
+                </p>
+            </div>
+            <div class="about-item about-product">
+                <a>Продукт</a>
+                <a>Возможности</a>
+                <a>Как это работает</a>
+                <a>Начать</a>
+            </div>
+            <div class="about-item about-company">
+                <a>Компания</a>
+                <a>О нас</a>
+                <a>Блог</a>
+                <a>Контакты</a>
+            </div>
+            <div class="about-item about-support">
+                <a>Поддержка</a>
+                <a>Справка</a>
+                <a>Политика конфидициальности</a>
+                <a>Условия использования</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,235 @@
+ul {
+    list-style-type: none;
+}
+ a {
+    text-decoration: none;
+ }
+
+ .btn {
+    background-color: rgb(22,93,251);
+    color: white;
+    border-radius: 5%;
+    border: none;
+ }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(79, 81, 83, 0.949); 
+    height: 42px;
+    margin-inline: 40px;
+    background-color: #fff;
+}
+
+.header-logo-image,
+.header-title {
+  vertical-align: middle;
+  margin-inline: 5px;
+}
+
+.header-title {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.header-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.header-menu-list a {
+    color: rgba(79, 81, 83, 0.949); 
+}
+
+.header-start {
+    
+    width: 110px;
+    font-size: 15px;
+}
+
+.header-start:hover {
+    background-color: #2c226f;
+}
+
+.header-menu-item a:hover {
+    font-size: 1.3em;
+}
+
+
+
+.main {
+    background-color: rgb(249,250,251);
+    
+}
+
+.form-container {
+    background-color: #fff;
+    width: 50%;
+    height: 700px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.form-group label{
+    padding-bottom: 7px;
+}
+
+label {
+    display: block;
+}
+
+#title {
+    width: 80%;
+}
+
+#days {
+    width: 80%;
+}
+
+textarea{
+    width: 80%;
+}
+
+.icon-group {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.icon-group button {
+    font-size: 30px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.circle-red {
+    background-color: rgb(239,68,68);
+}
+
+.circle-yellow{
+    background-color: rgb(245,158,12);
+}
+
+.circle-green {
+    background-color: rgb(18,185,129);
+}
+
+.circle-blue {
+    background-color: rgb(60,130,246);
+}
+
+.circle-purple {
+    background-color: rgb(139,92,246);
+}
+
+.circle-pink {
+    background-color: rgb(236,72,153);
+}
+
+.circle-jade {
+    background-color: rgb(21,184,166);
+}
+
+.circle-orange {
+    background-color: rgb(249,115,22);
+}
+
+.circle-turquoise{
+    background-color: rgb(7,182,212);
+}
+
+.circle-lilac {
+    background-color: rgb(100,102,241);
+}
+
+.group-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.group-button .btn {
+    width: 50%;
+    height: 45px;
+    margin-inline: auto;
+}
+
+.btn-add {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.btn-add:hover {
+    background-color: #2c226f;
+}
+
+.btn-cancel {
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgb(230,232,235);
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #c3c1c1;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: rgb(16,24,40);
+    color: white;
+
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-item a:nth-child(1),
+.footer-logo span {
+    font-weight: 900;
+}
+
+.about-item a:not(:nth-child(1)) {
+    cursor: pointer;
+}
+
+
+
+

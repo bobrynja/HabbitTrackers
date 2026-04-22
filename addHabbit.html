@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать привычку</title>
+    <link rel="stylesheet" href="addHabbit.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="/" class="header-logo img">
+                <img src="./images/logo.png" alt="HabbitTracker Logo" 
+                class="header-logo-image" width="40px"
+                loading="lazy">
+            </a>
+            <span class="header-title">HabbitTracker</span>
+        </div>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="/" class="header-menu-link is-current">Возможности</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="/" class="header-menu-link">Как это работает</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="/" class="header-menu-link">Войти</a>
+                </li>
+            </ul>
+            <button class="btn header-start" type="button">
+                Начать
+            </button>
+        </nav>
+    </header>
+
+
+    <div class="main">
+        <h2>Создать привычку</h2>
+        <form class="form-container">
+            <div class="form-group">
+                <label for="title">Название привычки </label>
+                <input type="text" name="title" id="title" placeholder="Например: утренняя зарядка" required />
+            </div>
+            <div class="form-group">
+                <label for="description">Описание </label>
+                <textarea  name="description" id="description" placeholder="Краткое описание привычки"></textarea>
+           </div>
+            <div class="form-group">
+                <label for="icon">Выберите иконку </label>
+                <div class="icon-group">
+                    <button>💪</button>
+                    <button>📚</button>
+                    <button>🏋️‍♂️</button>
+                    <button>🧘‍♂️</button>
+                    <button>💧</button>
+                    <button>🎨</button>
+                    <button>🎶</button>
+                    <button>🌱</button>
+                    <button>⚡</button>
+                    <button>🎯</button>
+                    <button>🧠</button>
+                    <button>💙</button>
+                    <button>🌟</button>
+                    <button>📋</button>
+                    <button>🎓</button>
+                    <button>️️🏃‍♂️️</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Выберите цвет </label>
+                <div class="color-group">
+                    <button><div class="circle circle-red"></div></button>
+                    <button><div class="circle circle-yellow"></div></button>
+                    <button><div class="circle circle-green"></div></button>
+                    <button><div class="circle circle-blue"></div></button>
+                    <button><div class="circle circle-purple"></div></button>
+                    <button><div class="circle circle-pink"></div></button>
+                    <button><div class="circle circle-jade"></div></button>
+                    <button><div class="circle circle-orange"></div></button>
+                    <button><div class="circle circle-turquoise"></div></button>
+                    <button><div class="circle circle-lilac"></div></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="days">Целевое количество дней </label>
+                <input type="range" min="7" max="365" step="1" value="14" id="days" name="days">
+                <span>30</span>
+                <div>От 7 до 365 дней</div>
+           </div>
+           <div class="form-group group-button">
+           <button class="btn btn-cancel">Отмена</button>
+            <button class="btn btn-add">Создать привычку</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="about-container">
+            <div class="about-item about-tracker">
+                <div class="footer-logo">
+                    <a href="/" class="header-logo img">
+                        <img src="./images/logo.png" alt="HabbitTracker Logo" 
+                        class="header-logo-image" width="40px"
+                        loading="lazy">
+                    </a>
+                    <span class="footer-title">HabbitTracker</span>
+                </div>
+                <p class="about-tracker-description">
+                    Трекер привычек для достижения<br>
+                    ваших целей и<br>
+                    самосовершенствования
+                </p>
+            </div>
+            <div class="about-item about-product">
+                <a>Продукт</a>
+                <a>Возможности</a>
+                <a>Как это работает</a>
+                <a>Начать</a>
+            </div>
+            <div class="about-item about-company">
+                <a>Компания</a>
+                <a>О нас</a>
+                <a>Блог</a>
+                <a>Контакты</a>
+            </div>
+            <div class="about-item about-support">
+                <a>Поддержка</a>
+                <a>Справка</a>
+                <a>Политика конфидициальности</a>
+                <a>Условия использования</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
