@@ -15,6 +15,9 @@ buttons.forEach(button => {
 });
 
 
+
+
+
 const colorButtons = document.querySelectorAll('.color-group button');
 
 colorButtons.forEach(button => {
@@ -23,6 +26,9 @@ colorButtons.forEach(button => {
         this.classList.add('color-current');
     });
 });
+
+
+
 
 
 document.getElementById('habitForm').addEventListener('submit', function(e){

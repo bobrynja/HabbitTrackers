@@ -290,7 +290,15 @@ ul {
     cursor: pointer;
 }
 
-
+@media (max-width: 1100px) {
+    .features-item {
+        padding: 4px;
+    }
+    .features-container {
+        width: 90%;
+        padding-bottom: 5px;
+    }
+}
 
 
 

@@ -32,9 +32,14 @@ function loadHabits() {
     </div>
     `).join('');
 
-document.querySelectorAll('.habit-checkbox').forEach(checkbox => {
+    document.querySelectorAll('.habit-checkbox').forEach(checkbox => {
     checkbox.addEventListener('change', updateProgress);
   });
+
+    document.querySelectorAll('.btn-delete').forEach(button => {
+    button.addEventListener('click', deleteHabit);
+});
+
 }
 
 
@@ -65,4 +70,20 @@ progressBar.value = habit.currentDays;
 progressValue.textContent = `${Math.round((habit.currentDays / habit.days) * 100)}%`;
 smallText.textContent = `Серия: ${habit.currentDays} дней. Цель: ${habit.days}`;
 }
+
+function deleteHabit(event){
+    const button = event.target;
+    const habitId = parseInt(button.dataset.id);
+    const habits = JSON.parse(localStorage.getItem('habitsList')) || [];
+    const index = habits.findIndex(h => h.id === habitId);
+    if (index === -1) return;
+    habits.splice(index, 1);
+
+    localStorage.setItem('habitsList', JSON.stringify(habits));
+
+    loadHabits();
+}
+
+
+
 

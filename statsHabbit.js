@@ -14,9 +14,6 @@ function loadHabits() {
     }
 
     container.innerHTML = habits.map(habit => `
-        <div class="stats">
-        <div class="kolvo">Привычек<br>${habits.length}</div>
-        </div>
         <div class="habit-card" style="border-left: 5px solid ${habit.color}">
         <div class="info">
         <div class="hero">
@@ -34,4 +31,8 @@ function loadHabits() {
 document.querySelectorAll('.habit-checkbox').forEach(checkbox => {
     checkbox.addEventListener('change', updateProgress);
   });
+  
+  const kolvo = document.getElementById('kolvo');
+
+  kolvo.textContent = habits.length;
 }
