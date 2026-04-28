@@ -1,0 +1,9 @@
+.kolvo {
+    border-radius: 5px;
+    border: 1px solid rgba(227, 220, 220, 0.7);
+    width: 10%;
+    height: 60px;
+    padding-left: 10px;
+    line-height: 1.5em;
+    margin-left: 8px;
+}

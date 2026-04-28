@@ -110,6 +110,12 @@ textarea{
 
 .icon-group button {
     font-size: 30px;
+    
+}
+
+.icon-current, .color-current {
+    background-color: #575555;
+    border: 1px solid white;
 }
 
 .circle {

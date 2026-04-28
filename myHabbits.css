@@ -1,0 +1,67 @@
+.habit-card {
+    width: 80%;
+    border: 1px solid rgb(186, 180, 180);
+    margin: 10px; 
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.habit-card:hover {
+    background-color: #c0bbbb;
+}
+
+.body {
+    background-color: rgba(227, 220, 220, 0.7);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.hero h3 {
+    margin: 0 0 5px 0;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+progress{
+    width: 90%;
+}
+
+
+.custom-checkbox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 50%;
+  
+
+  
+}
+
+.custom-checkbox .checkmark::after {
+  content: '✔';
+  display: none;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
