@@ -19,7 +19,7 @@ ul {
     justify-content: space-between;
     color: rgba(79, 81, 83, 0.949); 
     height: 42px;
-    margin-inline: 40px;
+    margin-inline: 20px;
     background-color: #fff;
 }
 
@@ -38,6 +38,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 25px;
+    align-items: center;
 }
 
 .header-menu {
@@ -51,9 +52,21 @@ ul {
 }
 
 .header-start {
-    
-    width: 110px;
+    width: 100px;
+    height: 35px;
     font-size: 15px;
+}
+
+.header-menu-item {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    color: rgba(79, 81, 83, 0.949);
+    padding: 0 10px
 }
 
 .header-start:hover {
@@ -61,7 +74,7 @@ ul {
 }
 
 .header-menu-item a:hover {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .hero-section {
@@ -81,8 +94,6 @@ ul {
     width: 50%;
     margin-inline: auto;
     margin-top: 50px;
-    
-
 }
 
 .stat-number {
@@ -155,6 +166,7 @@ ul {
 
 .features-section {
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .features-item:nth-child(2) img {
@@ -163,21 +175,26 @@ ul {
 
 .features-container {
     margin-top: 60px;
-    width: 100%;
+    width: 80%;
+    max-width: 1100px;
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 25px;
-    margin-inline: 40px;
+    margin-left: auto; /* центрирование по горизонтали */
+    margin-right: auto;
 }
 
 .features-item {
-    width: 280px;
+    text-align: left;
+    width: 75%;
     height: 170px;
     padding: 20px;
-    background-color: rgb(249,250,251);
+    background-color: rgb(250, 250, 250);
     border-radius: 10%;
+    margin-left: auto; /* центрирование по горизонтали */
+    margin-right: auto;
 }
 
 
@@ -186,7 +203,6 @@ ul {
     background-color: rgb(249,250,251);
     text-align: center;
     padding-block: 30px;
-    margin-top: 40px;
 }
 
 .works-container {
@@ -200,7 +216,6 @@ ul {
     padding: 0 20px;
     margin-inline: auto;
     width: 100%;
-    max-width: 900px;
 }
 
 .works-item {
@@ -208,7 +223,7 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 250px;
+    width: 300px;
     margin: 0px;
 }
 
@@ -233,7 +248,7 @@ ul {
 .works-item-description {
     margin: 0;
     padding: 0;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .works-item-title {
@@ -291,25 +306,73 @@ ul {
 }
 
 
-
-
 @media (max-width: 1200px) {
+    .icon {
+        margin-top: 10px;
+    }
     .features-item {
-        padding: 10px 0px 0px 15px;
-        max-width: 300px;
+        padding: 0px 10px;
+        max-width: 450px;
         min-height: 165px;
         font-size: smaller;
         background-color: white;
 
     }
     .features-container {
-        width: 90%;
-        padding-bottom: 5px;
-        margin-top: 40px;
+        width: 80%;
+        padding: 40px 10px 20px 10px;
+        margin-left: auto;
+        margin-right: auto;
         gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
         grid-template-rows: repeat(3, 1fr);
     }
+}
+
+@media (max-width: 950px) {
+.about-container {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.stats-section {
+    width: 70%;
+}
+.features-item {
+    max-width: 100%;
+    width: 95%;
+    padding-top: 20px;
+}
+.features-section {
+    padding-bottom: 30px;
+}
+
+
+}
+
+@media (max-width: 800px) {
+.header-title {
+    display: none;
+}
+.header-menu-item:nth-child(2) {
+    width: 149px;
+}
+.header-menu-list {
+    gap: 0px;
+}
+.works-container{
+    width: 93%;
+}
+.features-container{
+    width: 95%;
+}
+.works-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+.works-container {
+    flex-direction: column;
+}
 }
 
 
